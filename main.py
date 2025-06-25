@@ -1,5 +1,11 @@
-from GBM_simulation import GBM as GBM_Simulation
-from GBM_pricer import GBM_formula as GBM_Pricer
+import sys
+import os
+
+# Add the src directory to the Python path
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+
+from simulations.GBM_simulation import GBM as GBM_Simulation
+from Pricing.GBM_pricer import GBM_formula as GBM_Pricer
 import numpy as np
 
 # Parameters
