@@ -1,6 +1,6 @@
 import numpy as np
 
-class GBM:
+class GBM_formula:
     def __init__(self, S_0, mu, sigma, t, W_t):
         self.S_0 = S_0      # Initial stock price
         self.mu = mu        # Drift
@@ -19,6 +19,6 @@ sigma = 0.2
 t = 50
 W_t = 0.00 # mean of Brownian motion is zero
 
-gbm = GBM(S_0, mu, sigma, t, W_t)
+gbm = GBM_formula(S_0, mu, sigma, t, W_t)
 S_t = gbm.calculate_S_t()
 print(f"S(t) = {S_t}")
