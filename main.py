@@ -20,8 +20,7 @@ W_t = 0.0  # Mean of Brownian motion
 # Run simulation
 simulator = GBM_Simulation(s_0, iterations, num_paths, mu, sigma)
 paths = simulator.monte_carlo()
-mean_price = np.mean([path[-1] for path in paths])
-print(f"Mean final stock price from simulation at t={t}: {mean_price}")
+mean_price = simulator.calculate_mean_price(paths)
 
 # Analytical solution
 pricer = GBM_Pricer(s_0, mu, sigma, t, W_t)
