@@ -1,1 +1,12 @@
+# Vasicek Model with Benchmarking Against Treasury Data
 
+### Overview
+This Python script is inspired by the Kaggle project Vasicek Model: Predicting Interest Rates (https://www.kaggle.com/code/subhanjan33/vasicek-model-predicting-interest-rates/notebook), which demonstrates the use of the Vasicek short-rate model for forecasting interest rates using historical data.
+
+### What’s New in This Version
+
+In addition to replicating the original modeling approach, this version introduces a benchmarking layer:
+
+- Forecasted interest rates from the Vasicek model are compared against recent market data.
+- Benchmark data is sourced from the 3-Month Treasury Bill rate available via FRED (https://fred.stlouisfed.org/series/TB3MS).
+This enhancement allows for a more realistic evaluation of the model’s predictive performance against actual market conditions.
