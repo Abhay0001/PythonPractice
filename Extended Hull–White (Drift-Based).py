@@ -65,6 +65,7 @@ class HullWhite3FactorCoupled:
         np.random.seed(42)
 
         for i in range(num_of_paths):
+            # Initial rate at t=0
             x = [x0]
             y = [y0]
             z = [z0]

@@ -64,6 +64,7 @@ class HullWhite3Factor:
 
         np.random.seed(10)  # Set seed once for reproducibility
         for i in range(num_of_paths):
+            # # Initial rates at t=0
             x = [x0]
             y = [y0]
             z = [z0]
